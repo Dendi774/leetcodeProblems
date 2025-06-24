@@ -59,7 +59,6 @@ class Solution:
             1+1+2+1+1+1
             1+2+1+1+1+1
             2+1+1+1+1+1
-            
         """
         
         
@@ -82,7 +81,6 @@ class Solution:
             num_of_steps.append(2)
             
             if sum(num_of_steps)==n:
-                print(num_of_steps)
                 if num_of_steps.count(1)>1 and num_of_steps.count(2)>1:
                     if num_of_steps.count(1) < num_of_steps.count(2):
                         num_of_Ways += (math.factorial(len(num_of_steps))/(math.factorial(num_of_steps.count(1))*(math.factorial(len(num_of_steps)-num_of_steps.count(1)))))
@@ -94,4 +92,4 @@ class Solution:
                     num_of_Ways += (math.factorial(len(num_of_steps))/(math.factorial(1)*(math.factorial(len(num_of_steps)-1))))
         
         
-print(Solution().climbStairs(n=11))
+print(Solution().climbStairs(n=45))
