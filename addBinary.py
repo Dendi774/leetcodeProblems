@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: str
         """
         
-        
+        """ Algortihm that adds two binary numbers """
         carry = 0
         sum = ""
     
@@ -23,20 +23,13 @@ class Solution(object):
             a= a[::-1]
             for i in range(len(b)-len(a)):
                 a+="0"
-                print(a)
             b = b[::-1]
-            
-
-
+        
         else:
             a = a[::-1]
             b = b[::-1]
-            
-        
-        print(f"\n{a}, {b}")
     
         for digit in enumerate(a):
-            print(carry)
             if int(digit[1]) + int(b[digit[0]]) + carry == 3:
                 carry = 1
                 sum += "1"
