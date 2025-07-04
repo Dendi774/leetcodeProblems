@@ -60,11 +60,6 @@ class Solution(object):
         # if there is then get the min, and get their difference, then compare that max_profit with the max and min difference after the current max value
         # if the max_profit is greater we change the max_profit to the new, and repeat.
         # we repeat this until we reach the end of the array prices
-    
-    
-        
-
-             
 
 tests = []
 
@@ -114,8 +109,8 @@ tests.append({
     "output": 999
 })
 
-"""
+
 for test in tests:
     print(f"Max Profit: {Solution().maxProfit(**test["input"])}")
     print(Solution().maxProfit(**test["input"]) == test["output"])
-    """
+    
