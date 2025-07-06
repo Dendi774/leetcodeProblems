@@ -92,4 +92,7 @@ class Solution:
                     num_of_Ways += (math.factorial(len(num_of_steps))/(math.factorial(1)*(math.factorial(len(num_of_steps)-1))))
         
         
+    def climbStairsRecursive(self, n):
+        pass
+        
 print(Solution().climbStairs(n=45))

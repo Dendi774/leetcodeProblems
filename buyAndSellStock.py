@@ -44,22 +44,9 @@ class Solution(object):
         max_profit = 0
         
         for i in prices:
-            if prices[next_index:] and max(prices[next_index:]) - i > max_profit:
-                max_profit = max(prices[next_index:]) - i
-                    
-            next_index += 1
-            
-            if next_index == len(prices):
-                return max_profit
+            print(i)
         
-        return max_profit
-        
-        
-        
-        # find the first max value, check if there are elements preceeding that max value, if there are no elements before that max, then we proceed with the other max value after that max
-        # if there is then get the min, and get their difference, then compare that max_profit with the max and min difference after the current max value
-        # if the max_profit is greater we change the max_profit to the new, and repeat.
-        # we repeat this until we reach the end of the array prices
+
 
 tests = []
 
@@ -111,6 +98,6 @@ tests.append({
 
 
 for test in tests:
-    print(f"Max Profit: {Solution().maxProfit(**test["input"])}")
+    print(f"{Solution().maxProfit(**test["input"])}")
     print(Solution().maxProfit(**test["input"]) == test["output"])
     
