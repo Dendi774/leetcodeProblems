@@ -10,8 +10,6 @@ class Solution:
         return True if math.sqrt(num).is_integer() else False
     
     
-
-
 tests = []
 
 
